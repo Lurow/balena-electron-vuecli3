@@ -1,9 +1,0 @@
-directories:
-  output: dist_electron
-  buildResources: build
-files:
-  - dist_electron/bundled/**/*
-  - node_modules/**/*
-  - package.json
-extends: null
-electronVersion: 2.0.10
