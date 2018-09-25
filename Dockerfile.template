@@ -41,7 +41,7 @@ RUN npm install -g @vue/cli && npm install -g electron-builder
 
 # Install npm modules for the application
 RUN JOBS=MAX npm install && npm cache clean --force
-  # rm -rf /tmp/* && node_modules/.bin/electron-rebuild
+  # rm -rf /tmp/*
 
 # Move app to filesystem
 COPY ./app ./
