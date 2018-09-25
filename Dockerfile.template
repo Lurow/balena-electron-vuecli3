@@ -43,6 +43,7 @@ RUN JOBS=MAX npm install --unsafe-perm --production && npm cache clean --force &
 
 # Move app to filesystem
 COPY ./app ./
+COPY ./src ./
 
 ## uncomment if you want systemd
 ENV INITSYSTEM on
