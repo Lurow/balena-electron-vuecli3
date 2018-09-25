@@ -11,13 +11,13 @@
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
-    "electron-rebuild": "^1.8.2",
     "vue": "^2.5.17"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.3",
     "@vue/cli-plugin-eslint": "^3.0.3",
     "@vue/cli-service": "^3.0.3",
+    "electron-rebuild": "^1.8.2",
     "electron": "^2.0.2",
     "vue-cli-plugin-electron-builder": "^1.0.0-rc.3",
     "vue-template-compiler": "^2.5.17"
