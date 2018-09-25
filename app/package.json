@@ -9,7 +9,7 @@
     "build:electron": "vue-cli-service build:electron",
     "serve:electron": "vue-cli-service serve:electron",
     "postinstall": "electron-builder install-app-deps",
-    "build:pi": "electron-builder build --armv71"
+    "build:pi": "electron-builder build --armv7l"
   },
   "dependencies": {
     "vue": "^2.5.17"
