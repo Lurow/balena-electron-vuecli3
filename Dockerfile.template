@@ -46,7 +46,7 @@ RUN JOBS=MAX npm install && npm cache clean --force
 # Move app to filesystem
 COPY ./app ./
 
-RUN npm run build:electron --armv7l
+RUN npm run build:pi
 
 ## uncomment if you want systemd
 ENV INITSYSTEM on
