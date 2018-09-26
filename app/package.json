@@ -26,6 +26,7 @@
         "build:pi": "vue-cli-service build:electron --armv7l"
     },
     "dependencies": {
+        "lockfile": "^1.0.4",
         "vue": "^2.5.17"
     },
     "devDependencies": {
