@@ -1,50 +1,64 @@
 {
-  "name": "own-vue-sol",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "build:electron": "vue-cli-service build:electron",
-    "serve:electron": "vue-cli-service serve:electron",
-    "postinstall": "electron-builder install-app-deps",
-    "build:pi": "vue-cli-service build:electron --armv7l"
-  },
-  "dependencies": {
-    "vue": "^2.5.17"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.3",
-    "@vue/cli-plugin-eslint": "^3.0.3",
-    "@vue/cli-service": "^3.0.3",
-    "electron": "^2.0.2",
-    "vue-cli-plugin-electron-builder": "^1.0.0-rc.3",
-    "vue-template-compiler": "^2.5.17"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "resin-electron-vue-boilerplate",
+    "description": "A boilerplate to help deploying a modern vue app to resin with a reasonable",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Lurow/resin-electron-vuecli3"
     },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
+    "keywords": [
+        "resin",
+        "electron",
+        "vue"
     ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "main": "dist_electron/bundled/background.js"
+    "author": "Louis Rose <louis.rose@bearinasuit.de> (https://bearinasuit.de/)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Lurow/resin-electron-vuecli3"
+    },
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "build:electron": "vue-cli-service build:electron",
+        "serve:electron": "vue-cli-service serve:electron",
+        "postinstall": "electron-builder install-app-deps",
+        "build:pi": "vue-cli-service build:electron --armv7l"
+    },
+    "dependencies": {
+        "vue": "^2.5.17"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.0.3",
+        "@vue/cli-plugin-eslint": "^3.0.3",
+        "@vue/cli-service": "^3.0.3",
+        "electron": "^2.0.2",
+        "vue-cli-plugin-electron-builder": "^1.0.0-rc.3",
+        "vue-template-compiler": "^2.5.17"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "rules": {},
+        "parserOptions": {
+            "parser": "babel-eslint"
+        }
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ],
+    "main": "dist_electron/bundled/background.js"
 }

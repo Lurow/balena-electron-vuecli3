@@ -1,4 +1,4 @@
-# own-vue-sol
+# Vue-App
 
 ## Project setup
 ```
@@ -7,15 +7,15 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn run build
+yarn build
 ```
 
-### Lints and fixes files
+### Same for Electron
 ```
-yarn run lint
+yarn serve:electron    yarn build:electron
 ```
