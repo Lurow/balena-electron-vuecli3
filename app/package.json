@@ -20,10 +20,10 @@
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
         "lint": "vue-cli-service lint",
-        "build:electron": "vue-cli-service build:electron",
-        "serve:electron": "vue-cli-service serve:electron",
+        "build:electron": "vue-cli-service electron:build",
+        "serve:electron": "vue-cli-service electron:serve",
         "postinstall": "electron-builder install-app-deps",
-        "build:pi": "vue-cli-service build:electron --armv7l"
+        "build:pi": "vue-cli-service build:electron --legacy --armv7l"
     },
     "dependencies": {
         "lockfile": "^1.0.4",
@@ -33,8 +33,8 @@
         "@vue/cli-plugin-babel": "^3.0.3",
         "@vue/cli-plugin-eslint": "^3.0.3",
         "@vue/cli-service": "^3.0.3",
-        "electron": "^2.0.2",
-        "vue-cli-plugin-electron-builder": "^1.0.0-rc.3",
+        "electron": "^3.0.5",
+        "vue-cli-plugin-electron-builder": "^1.0.0-rc.4",
         "vue-template-compiler": "^2.5.17"
     },
     "eslintConfig": {
