@@ -61,5 +61,5 @@
         "last 2 versions",
         "not ie <= 8"
     ],
-    "main": "dist_electron/bundled/background.js"
+    "main": "background.js"
 }
