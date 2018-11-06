@@ -1,20 +1,20 @@
 {
-    "name": "resin-electron-vue-boilerplate",
-    "description": "A boilerplate to help deploying a modern vue app to resin with a reasonable",
+    "name": "balena-electron-vue-boilerplate",
+    "description": "A boilerplate to help deploying a modern vue app to balena with a reasonable",
     "version": "1.0.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Lurow/resin-electron-vuecli3"
+        "url": "https://github.com/Lurow/balena-electron-vuecli3"
     },
     "keywords": [
-        "resin",
+        "balena",
         "electron",
         "vue"
     ],
     "author": "Louis Rose <louis.rose@bearinasuit.de> (https://bearinasuit.de/)",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/Lurow/resin-electron-vuecli3"
+        "url": "https://github.com/Lurow/balena-electron-vuecli3"
     },
     "scripts": {
         "serve": "vue-cli-service serve",
@@ -23,7 +23,7 @@
         "build:electron": "vue-cli-service electron:build",
         "serve:electron": "vue-cli-service electron:serve",
         "postinstall": "electron-builder install-app-deps",
-        "build:pi": "vue-cli-service build:electron --legacy --armv7l"
+        "build:pi": "vue-cli-service electron:build --legacy --armv7l"
     },
     "dependencies": {
         "lockfile": "^1.0.4",
