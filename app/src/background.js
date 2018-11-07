@@ -127,7 +127,6 @@ function createMainWindow() {
     mainWindow = null
   })
   window.configuration = configContent ? JSON.parse(configContent) : {}
-  console.log(window.configuration)
   window.webContents.on('devtools-opened', () => {
     window.focus()
     setImmediate(() => {
