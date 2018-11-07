@@ -11,9 +11,10 @@ if (ELECTRON_DETECTED) {
   const { remote } = require('electron')
   let currentWindow = remote.getCurrentWindow()
   tmpConfig = currentWindow.configuration ? Object.assign({}, currentWindow.configuration) : jsonconfig
+} else {
+  tmpConfig = jsonconfig
 }
-tmpConfig = jsonconfig
-console.log(tmpConfig)
+console.log(tmpConfig.foo)
 export const config = tmpConfig
 
 new Vue({
