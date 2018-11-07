@@ -127,6 +127,7 @@ function createMainWindow() {
     mainWindow = null
   })
   window.configuration = configContent
+  console.log(window.configuration)
   window.webContents.on('devtools-opened', () => {
     window.focus()
     setImmediate(() => {

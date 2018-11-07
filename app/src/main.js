@@ -14,6 +14,7 @@ if (ELECTRON_DETECTED) {
 } else {
   tmpConfig = jsonconfig
 }
+console.log(tmpConfig)
 console.log(tmpConfig.foo)
 export const config = tmpConfig
 
