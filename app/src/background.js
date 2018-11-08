@@ -29,7 +29,7 @@ const electronConfig = {
   URL_LAUNCHER_NODE: process.env.URL_LAUNCHER_NODE === '1' ? 1 : 0,
   URL_LAUNCHER_WIDTH: parseInt(process.env.URL_LAUNCHER_WIDTH || 1920, 10),
   URL_LAUNCHER_HEIGHT: parseInt(process.env.URL_LAUNCHER_HEIGHT || 1080, 10),
-  URL_LAUNCHER_TITLE: process.env.URL_LAUNCHER_TITLE || 'RESIN.IO',
+  URL_LAUNCHER_TITLE: process.env.URL_LAUNCHER_TITLE || 'BALENA.IO',
   URL_LAUNCHER_CONSOLE: process.env.URL_LAUNCHER_CONSOLE === '1' ? 1 : 0,
   URL_LAUNCHER_URL:
     process.env.URL_LAUNCHER_URL ||
@@ -41,7 +41,7 @@ const electronConfig = {
   URL_LAUNCHER_ZOOM: parseFloat(process.env.URL_LAUNCHER_ZOOM || 1.0),
   URL_LAUNCHER_OVERLAY_SCROLLBARS: process.env.URL_LAUNCHER_OVERLAY_SCROLLBARS === '1' ? 1 : 0,
   ELECTRON_ENABLE_HW_ACCELERATION: process.env.ELECTRON_ENABLE_HW_ACCELERATION === '1',
-  ELECTRON_RESIN_UPDATE_LOCK: process.env.ELECTRON_RESIN_UPDATE_LOCK === '1'
+  ELECTRON_BALENA_UPDATE_LOCK: process.env.ELECTRON_BALENA_UPDATE_LOCK === '1'
 }
 
 // Enable / disable hardware acceleration
@@ -75,7 +75,7 @@ if (isDevelopment) {
 
 // Listen for a 'resin-update-lock' to either enable, disable or check
 // the update lock from the renderer process (i.e. the app)
-if (electronConfig.ELECTRON_RESIN_UPDATE_LOCK) {
+if (electronConfig.ELECTRON_BALENA_UPDATE_LOCK) {
   const lockFile = require('lockfile')
   app.ipcMain.on('resin-update-lock', (event, command) => {
     switch (command) {

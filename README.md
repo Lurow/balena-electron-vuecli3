@@ -21,7 +21,7 @@ In order to deploy this app on your balena.io account:
 1. clone this image onto your computer
 
 ```
-git clone git@github.com:Lurow/resin-electron-vuecli3.git
+git clone git@github.com:Lurow/balena-electron-vuecli3.git
 ```
 
 2. add a new repository with the name of your balena application (example)
