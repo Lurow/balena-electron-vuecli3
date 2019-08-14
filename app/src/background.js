@@ -109,7 +109,8 @@ protocol.registerSchemesAsPrivileged([
 function createMainWindow() {
   const window = new BrowserWindow({
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      sandbox: false
     },
     width: electronConfig.URL_LAUNCHER_WIDTH,
     height: electronConfig.URL_LAUNCHER_HEIGHT,
