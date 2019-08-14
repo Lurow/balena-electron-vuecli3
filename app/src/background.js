@@ -102,10 +102,15 @@ if (electronConfig.ELECTRON_BALENA_UPDATE_LOCK) {
 }
 
 // Standard scheme must be registered before the app is ready
-protocol.registerStandardSchemes(['app'], { secure: true })
+protocol.registerSchemesAsPrivileged([
+  { scheme: 'app', privileges: { standard: true, secure: true, supportFetchAPI: true } }
+])
 
 function createMainWindow() {
   const window = new BrowserWindow({
+    webPreferences: {
+      nodeIntegration: true
+    },
     width: electronConfig.URL_LAUNCHER_WIDTH,
     height: electronConfig.URL_LAUNCHER_HEIGHT,
     frame: !!electronConfig.URL_LAUNCHER_FRAME,
