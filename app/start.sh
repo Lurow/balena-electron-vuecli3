@@ -10,4 +10,4 @@ umount /dev/shm && mount -t tmpfs shm /dev/shm
 # it saves you a LOT of resources avoiding full-desktops envs
 
 rm /tmp/.X0-lock &>/dev/null || true
-NODE_ENV='production' startx /usr/src/app/node_modules/electron/dist/electron /usr/src/app/dist_electron/bundled --enable-logging
+NODE_ENV='production' startx /usr/src/app/node_modules/electron/dist/electron /usr/src/app/dist_electron/bundled --enable-logging --no-sandbox
